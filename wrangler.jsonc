@@ -1,6 +1,6 @@
 {
 	"$schema": "./node_modules/wrangler/config-schema.json",
-	"name": "vipedge-key",
+	"name": "edge-key",
 	"compatibility_date": "2026-03-12",
 	"main": "virtual:photon:cloudflare:server-entry",
 	"compatibility_flags": ["nodejs_compat"],
@@ -11,8 +11,8 @@
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_name": "edgekey-db",
-			"migrations_dir": "prisma/migrations","database_id": "e9585f27-d298-461e-a106-800933c2c364",
+			"database_name": "vipedgekey-db",
+			"migrations_dir": "prisma/migrations","database_id": "e961ff08-75d1-4594-b43f-e8338528702a",
 			// "database_id": "24390dbc-b9c6-4ae6-8c7f-507fb2eb36f2", // 执行 wrangler d1 命令必须，但是与cf一键部署冲突所以注释
 		}
 	],
